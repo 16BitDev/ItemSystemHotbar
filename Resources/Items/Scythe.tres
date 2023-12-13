@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://3rk1ewypci0l"]
+
+[ext_resource type="Texture2D" uid="uid://bmhwtcftvsla" path="res://assets/Clockwork raven - Weapons and Potions - Free pack/Clockwork raven - Weapons and Potions - Free pack/16x16/tile016.png" id="1_3lst8"]
+[ext_resource type="Script" path="res://scenes/Item.gd" id="2_15e4i"]
+
+[resource]
+script = ExtResource("2_15e4i")
+icon = ExtResource("1_3lst8")
+name = "Scythe"
+rarity = "Epic"
+description = "Deals Damage."

@@ -1,0 +1,45 @@
+extends HBoxContainer
+
+@onready var slots = get_children()
+signal index(i: int)
+
+var current_index : int:
+	set(value):
+		current_index = value
+		reset_focus()
+		get_child(current_index).set_process_input(true)
+
+func _ready():
+	set_focus()
+	current_index = 0
+
+func _input(event):
+	if event.is_action_pressed("scroll_down"):
+		if current_index == get_child_count() - 1:
+			current_index = 0
+		else:
+			current_index += 1
+		set_focus()
+
+	if event.is_action_pressed("scroll_up"):
+		if current_index == 0:
+			current_index = get_child_count() - 1
+		else:
+			current_index -= 1
+		set_focus()
+	
+
+func set_focus():
+	get_child(current_index).grab_focus()
+	index.emit(current_index)
+
+func reset_focus():
+	for slot in slots:
+		slot.set_process_input(false)
+
+func add_item(stats, skill):
+	for slot in slots:
+		if slot.stats == null:
+			slot.stats = stats
+			slot.skill = skill
+			return

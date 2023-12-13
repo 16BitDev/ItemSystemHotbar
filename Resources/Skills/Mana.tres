@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Skill" load_steps=2 format=3 uid="uid://cy12p1rkj0g4u"]
+
+[ext_resource type="Script" path="res://scenes/Skill.gd" id="1_gpwas"]
+
+[resource]
+script = ExtResource("1_gpwas")
+name = "Mana"
+description = "Restores mana."
+mana = 20.0

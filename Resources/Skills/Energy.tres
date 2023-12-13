@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Skill" load_steps=2 format=3 uid="uid://bifu6yxmmmkqi"]
+
+[ext_resource type="Script" path="res://scenes/Skill.gd" id="1_r8ru2"]
+
+[resource]
+script = ExtResource("1_r8ru2")
+name = "Energy"
+description = "Energy Blast"
+mana = 50.0

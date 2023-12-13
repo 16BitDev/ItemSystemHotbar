@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://ps4xt1xx2id1"]
+
+[ext_resource type="Texture2D" uid="uid://cmldm3iglw5x4" path="res://assets/Clockwork raven - Weapons and Potions - Free pack/Clockwork raven - Weapons and Potions - Free pack/16x16/tile030.png" id="1_xmlay"]
+[ext_resource type="Script" path="res://scenes/Item.gd" id="2_id3ol"]
+
+[resource]
+script = ExtResource("2_id3ol")
+icon = ExtResource("1_xmlay")
+name = "Mace"
+rarity = "Rare"
+description = "Deals Damage."
