@@ -30,3 +30,4 @@ func use_item():
 func _on_pressed():
 	get_parent().current_index = get_index()
 	use_item()
+	player.find_child("Weapons")._on_index(get_index())

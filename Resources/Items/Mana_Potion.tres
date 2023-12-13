@@ -7,5 +7,5 @@
 script = ExtResource("2_j504v")
 icon = ExtResource("1_n0vhr")
 name = "Mana Potion"
-rarity = "Rare"
+type = "Consumable"
 description = "Restores Mana."
