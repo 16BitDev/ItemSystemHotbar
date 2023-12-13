@@ -7,11 +7,13 @@ var current_index : int:
 	set(value):
 		current_index = value
 		reset_focus()
+		set_focus()
 		get_child(current_index).set_process_input(true)
 
+
 func _ready():
-	set_focus()
 	current_index = 0
+
 
 func _input(event):
 	if event.is_action_pressed("scroll_down"):
@@ -19,14 +21,14 @@ func _input(event):
 			current_index = 0
 		else:
 			current_index += 1
-		set_focus()
+
 
 	if event.is_action_pressed("scroll_up"):
 		if current_index == 0:
 			current_index = get_child_count() - 1
 		else:
 			current_index -= 1
-		set_focus()
+
 	
 
 func set_focus():

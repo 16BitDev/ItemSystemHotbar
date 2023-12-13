@@ -5,8 +5,3 @@ class_name Skill
 @export var description : String
 
 @export var mana: float
-
-signal skill_used
-
-func use():
-	skill_used.emit()

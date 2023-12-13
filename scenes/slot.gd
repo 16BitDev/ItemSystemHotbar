@@ -11,9 +11,7 @@ extends Button
 		else:
 			icon = null
 
-@export var skill : Skill = null:
-	set(value):
-		skill = value
+@export var skill : Skill = null
 
 func _ready():
 	set_process_input(false)
@@ -28,6 +26,6 @@ func use_item():
 	player.play_FX(skill)
 
 func _on_pressed():
-	get_parent().current_index = get_index()
 	use_item()
+	get_parent().current_index = get_index()
 	player.find_child("Weapons")._on_index(get_index())

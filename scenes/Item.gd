@@ -8,8 +8,3 @@ class_name Item
 var type = "Weapon"
 
 @export_multiline var description: String
-
-signal item_used
-
-func use():
-	item_used.emit()

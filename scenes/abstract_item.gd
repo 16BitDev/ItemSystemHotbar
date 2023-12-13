@@ -11,7 +11,6 @@ func _ready():
 		texture = stats.icon
 
 
-
 func _on_player_entered(body):
 	call_deferred("reparent",body.find_child("Weapons"))
 	position = body.position

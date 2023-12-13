@@ -1,12 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://bi0m8i5sijni1"]
+[gd_scene load_steps=11 format=3 uid="uid://bi0m8i5sijni1"]
 
 [ext_resource type="PackedScene" uid="uid://ba7cwreghe1rx" path="res://scenes/player.tscn" id="2_pm0n1"]
 [ext_resource type="PackedScene" uid="uid://buah3qnbqdlem" path="res://scenes/abstract_item.tscn" id="2_rfmi6"]
 [ext_resource type="Resource" uid="uid://kkpxv0loogxw" path="res://Resources/Items/Sword.tres" id="3_no3kb"]
 [ext_resource type="Resource" uid="uid://blpcxsysks4g4" path="res://Resources/Skills/Fire.tres" id="4_jhcuu"]
 [ext_resource type="Resource" uid="uid://3rk1ewypci0l" path="res://Resources/Items/Scythe.tres" id="5_rhglk"]
+[ext_resource type="Resource" uid="uid://clvaqnn8s2tkc" path="res://Resources/Items/Mana_Potion.tres" id="6_k1xwf"]
 [ext_resource type="Resource" uid="uid://bifu6yxmmmkqi" path="res://Resources/Skills/Energy.tres" id="6_ql7c7"]
 [ext_resource type="Resource" uid="uid://ps4xt1xx2id1" path="res://Resources/Items/Mace.tres" id="7_citmq"]
+[ext_resource type="Resource" uid="uid://cy12p1rkj0g4u" path="res://Resources/Skills/Mana.tres" id="7_ije7q"]
 [ext_resource type="Resource" uid="uid://gnqvyesc0u7u" path="res://Resources/Skills/Ki.tres" id="8_68kow"]
 
 [node name="TestScene" type="Node2D"]
@@ -20,6 +22,11 @@ skill = ExtResource("4_jhcuu")
 position = Vector2(233, 83)
 stats = ExtResource("5_rhglk")
 skill = ExtResource("6_ql7c7")
+
+[node name="AbstractItem4" parent="." instance=ExtResource("2_rfmi6")]
+position = Vector2(260, 122)
+stats = ExtResource("6_k1xwf")
+skill = ExtResource("7_ije7q")
 
 [node name="AbstractItem3" parent="." instance=ExtResource("2_rfmi6")]
 position = Vector2(174, 99)
